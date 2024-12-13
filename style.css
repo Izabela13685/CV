@@ -1,11 +1,10 @@
-/* Ogólne stylizacje */
+/* Styl ogólny */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
 }
 
 .container {
@@ -13,160 +12,109 @@ body {
     max-width: 1200px;
     margin: 30px auto;
     background-color: #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
     overflow: hidden;
 }
 
-/* Stylizacja lewego panelu */
-.sidebar {
-    background-color: #1e88e5;
-    color: #ffffff;
+/* Lewy panel */
+.left-panel {
+    background-color: #2c3e50;
+    color: #ecf0f1;
     width: 30%;
-    padding: 30px 20px;
-    text-align: center;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.sidebar .photo img {
+.left-panel .photo img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 5px solid #ecf0f1;
     margin-bottom: 20px;
-    border: 5px solid #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.sidebar h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
+.left-panel h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
     padding-bottom: 5px;
 }
 
-.sidebar p, .sidebar ul li {
+.left-panel p, .left-panel ul li {
     margin: 10px 0;
     font-size: 1rem;
 }
 
-.sidebar ul {
+.left-panel ul {
     padding: 0;
     list-style: none;
 }
 
-.sidebar ul li {
-    margin-bottom: 10px;
+.left-panel ul li {
     display: flex;
     align-items: center;
 }
 
-.sidebar ul li span {
+.left-panel ul li span {
     margin-right: 10px;
-    font-size: 1.2rem;
 }
 
-/* Stylizacja prawej kolumny */
-.content {
+/* Prawa strona */
+.right-panel {
     width: 70%;
-    padding: 40px 30px;
-    background-color: #f9f9f9;
+    padding: 30px 40px;
+    background-color: #ffffff;
 }
 
-.content h1 {
+.right-panel h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
-    color: #1e88e5;
-    font-weight: bold;
+    color: #2c3e50;
 }
 
-.content section {
-    margin-bottom: 30px;
-}
-
-.content h2 {
-    font-size: 1.8rem;
-    color: #1e88e5;
-    border-bottom: 2px solid #1e88e5;
+.right-panel h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2c3e50;
     padding-bottom: 5px;
-    margin-bottom: 20px;
 }
 
-.content ul {
+.right-panel ul {
     list-style: none;
     padding: 0;
 }
 
-.content ul li {
+.right-panel ul li {
     margin-bottom: 15px;
-    position: relative;
     padding-left: 25px;
-    font-size: 1rem;
+    position: relative;
 }
 
-.content ul li::before {
+.right-panel ul li::before {
     content: '•';
     position: absolute;
     left: 0;
-    color: #1e88e5;
+    color: #2c3e50;
     font-size: 1.5rem;
 }
 
-.content ul li ul {
+.right-panel ul li ul {
     margin-top: 10px;
     list-style: circle;
     padding-left: 20px;
-}
-
-.content ul li ul li {
-    padding-left: 5px;
     font-size: 0.9rem;
     color: #666;
 }
 
-.content p {
-    margin-bottom: 15px;
+.right-panel p {
+    margin-bottom: 20px;
     text-align: justify;
     font-size: 1rem;
 }
 
-/* Sekcja certyfikatów */
-.content ul.certificates li {
-    background-color: #ffffff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-left: 4px solid #1e88e5;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
-}
-
-/* Stylizacja przycisków i linków */
-.sidebar a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ff5722;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.sidebar a:hover {
-    background-color: #e64a19;
-}
-
-/* Stopka */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1e88e5;
-    color: #ffffff;
-    font-size: 0.9rem;
-    margin-top: 30px;
-    border-radius: 0 0 10px 10px;
-}
