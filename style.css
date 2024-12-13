@@ -1,9 +1,9 @@
 /* Ogólne stylizacje */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
@@ -11,19 +11,19 @@ body {
 .container {
     display: flex;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 30px auto;
     background-color: #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     overflow: hidden;
 }
 
 /* Stylizacja lewego panelu */
 .sidebar {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #1e88e5;
+    color: #ffffff;
     width: 30%;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -35,24 +35,21 @@ body {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 4px solid #ecf0f1;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar h2 {
     font-size: 1.5rem;
-    margin: 20px 0 10px;
-    color: #ecf0f1;
-    border-bottom: 2px solid #ecf0f1;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 5px;
 }
 
-.sidebar p {
+.sidebar p, .sidebar ul li {
     margin: 10px 0;
-}
-
-.sidebar .languages span {
-    font-size: 1.5rem;
-    margin-right: 10px;
+    font-size: 1rem;
 }
 
 .sidebar ul {
@@ -61,20 +58,29 @@ body {
 }
 
 .sidebar ul li {
-    margin: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li span {
+    margin-right: 10px;
+    font-size: 1.2rem;
 }
 
 /* Stylizacja prawej kolumny */
 .content {
     width: 70%;
-    padding: 30px;
+    padding: 40px 30px;
+    background-color: #f9f9f9;
 }
 
 .content h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
-    color: #2c3e50;
+    color: #1e88e5;
+    font-weight: bold;
 }
 
 .content section {
@@ -83,10 +89,10 @@ body {
 
 .content h2 {
     font-size: 1.8rem;
-    color: #2c3e50;
-    border-bottom: 2px solid #2c3e50;
+    color: #1e88e5;
+    border-bottom: 2px solid #1e88e5;
     padding-bottom: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .content ul {
@@ -98,66 +104,69 @@ body {
     margin-bottom: 15px;
     position: relative;
     padding-left: 25px;
+    font-size: 1rem;
 }
 
 .content ul li::before {
     content: '•';
     position: absolute;
     left: 0;
-    color: #2c3e50;
+    color: #1e88e5;
     font-size: 1.5rem;
 }
 
 .content ul li ul {
+    margin-top: 10px;
     list-style: circle;
     padding-left: 20px;
 }
 
 .content ul li ul li {
     padding-left: 5px;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 .content p {
     margin-bottom: 15px;
     text-align: justify;
+    font-size: 1rem;
 }
 
-/* Sekcja stopki */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    font-size: 0.9rem;
-    margin-top: 30px;
-}
-
-/* Stylizacja certyfikatów */
-.content ul.certificates {
-    list-style: none;
-    padding: 0;
-}
-
+/* Sekcja certyfikatów */
 .content ul.certificates li {
-    background-color: #ecf0f1;
+    background-color: #ffffff;
     padding: 10px;
     margin-bottom: 10px;
-    border-left: 4px solid #2c3e50;
+    border-left: 4px solid #1e88e5;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
 }
 
-/* Przyciski (dla ewentualnych linków kontaktowych) */
+/* Stylizacja przycisków i linków */
 .sidebar a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #ff5722;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .sidebar a:hover {
-    background-color: #2980b9;
+    background-color: #e64a19;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e88e5;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    border-radius: 0 0 10px 10px;
 }
