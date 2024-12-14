@@ -7,21 +7,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(180deg, #eef3f9, #ffffff); /* Niebiesko-białe tło */
-    color: #333; /* Ciemny tekst */
+    background: linear-gradient(180deg, #eef3f9, #ffffff);
+    color: #333;
     line-height: 1.6;
     overflow-x: hidden;
     transition: all 0.3s ease-in-out;
 }
 
-/* Tryb ciemny */
-body.dark-theme {
-    background: linear-gradient(180deg, #121212, #1e1e1e); /* Czarny */
-    color: #f1c40f; /* Żółty tekst */
-}
-
-/* Nagłówki */
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
@@ -30,10 +23,6 @@ h1, h2 {
 h1 {
     font-size: 3rem;
     color: #3498db;
-}
-
-body.dark-theme h1 {
-    color: #f1c40f; /* Żółty nagłówek w trybie ciemnym */
 }
 
 h2 {
@@ -45,82 +34,35 @@ h2 {
     margin-bottom: 30px;
 }
 
-body.dark-theme h2 {
-    color: #f1c40f;
-    border-bottom: 3px solid #f1c40f;
+h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
 }
 
-/* Sekcja O mnie */
-.about {
-    padding: 60px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: center;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+p {
+    margin: 10px 0;
+    text-align: justify;
+    font-size: 1rem;
+    color: #555;
 }
 
 .profile {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Zaokrąglone zdjęcie */
+    border-radius: 50%;
     border: 5px solid #3498db;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    object-fit: cover; /* Dopasowanie zdjęcia */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
 }
 
-body.dark-theme .profile {
-    border-color: #f1c40f; /* Żółta obwódka w trybie ciemnym */
+.about-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
-.profile:hover {
-    transform: scale(1.1); /* Powiększenie na hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Większy cień na hover */
-}
-
-.about p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.8;
-}
-
-body.dark-theme .about p {
-    color: #f1c40f; /* Żółty tekst w trybie ciemnym */
-}
-
-/* Sticky Header */
-.sticky-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #3498db; /* Niebieski w trybie jasnym */
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-body.dark-theme .sticky-header {
-    background: #1e1e1e; /* Ciemny w trybie ciemnym */
-    color: #f1c40f; /* Żółty tekst w trybie ciemnym */
-}
-
-.sticky-header nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1rem;
-    font-weight: bold;
-}
 
 body.dark-theme .sticky-header nav a {
     color: #f1c40f;
