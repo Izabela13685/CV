@@ -2,8 +2,8 @@
 const toggleThemeButton = document.querySelector('#toggle-theme');
 const body = document.querySelector('body');
 const header = document.querySelector('header');
-const sections = document.querySelectorAll('.timeline-item, .skill, .project, .portfolio, .about, .contact, .education');
 const footer = document.querySelector('footer');
+const sections = document.querySelectorAll('.timeline-item, .skill, .project, .portfolio, .about, .contact, .education');
 
 toggleThemeButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
