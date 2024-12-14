@@ -20,51 +20,22 @@ body.dark-mode {
     color: #f0f0f0; /* light text */
 }
 
-/* Header */
-header {
-    background-color: #3498db;
-    padding: 20px;
+/* Sections */
+section {
+    padding: 50px 0;
 }
 
-header.dark-mode {
-    background-color: #34495e;
+section h2 {
+    font-size: 2rem;
+    color: #3498db;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-header a {
-    color: #fff;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header a:hover {
-    text-decoration: underline;
-}
-
-/* Button */
-button {
-    background-color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #3498db;
-    color: white;
-}
-
-button.dark-mode {
-    background-color: #2e2e2e;
-    color: #fff;
-}
-
-button.dark-mode:hover {
-    background-color: #34495e;
-}
-
-/* Hero Section */
+/* Section specific styles */
 .hero {
     background: linear-gradient(135deg, #3498db, #2ecc71);
     color: white;
@@ -100,21 +71,9 @@ button.dark-mode:hover {
     color: white;
 }
 
-/* Section Title */
-h2 {
-    font-size: 2rem;
-    color: #3498db;
-    border-bottom: 3px solid #3498db;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
 /* About Section */
 .about {
     background-color: #fff;
-    padding: 50px 0;
     text-align: center;
 }
 
@@ -143,7 +102,6 @@ p {
 /* Career Section */
 .timeline {
     background-color: #f4f4f4;
-    padding: 50px 0;
 }
 
 .timeline-container {
@@ -179,7 +137,6 @@ p {
 /* Skills Section */
 .skills {
     background-color: #fff;
-    padding: 50px 0;
 }
 
 .skills-container {
@@ -212,7 +169,6 @@ p {
 /* Portfolio Section */
 .portfolio {
     background-color: #f4f4f4;
-    padding: 50px 0;
 }
 
 .portfolio-container {
@@ -243,23 +199,9 @@ p {
     margin-bottom: 10px;
 }
 
-/* Education Section */
-.education {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.education p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
 /* Contact Section */
 .contact {
     background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
 }
 
 .contact form {
@@ -313,6 +255,17 @@ button[type="submit"]:hover {
     background-color: #2980b9;
 }
 
+/* Education Section */
+.education {
+    background-color: #fff;
+}
+
+.education p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Footer */
 footer {
     background-color: #f4f4f4;
     padding: 20px;
