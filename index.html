@@ -8,83 +8,103 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Lewa kolumna -->
-        <aside class="left-panel">
-            <div class="photo">
-                <img src="profile-placeholder.png" alt="Zdjęcie profilowe">
-            </div>
-            <section class="personal-data">
-                <h2><i class="fas fa-id-card"></i> Kontakt</h2>
-                <ul>
-                    <li>Miśka Marowiecki</li>
-                    <li><a href="mailto:isa2022.pl">isa2022.pl</a></li>
-                    <li><a href="tel:+48537000660">537000660</a></li>
-                </ul>
-            </section>
-            <section class="languages">
-                <h2><i class="fas fa-language"></i> Języki obce</h2>
-                <ul>
-                    <li>🇺🇸 Angielski - A2</li>
-                    <li>🇷🇺 Rosyjski - A2</li>
-                </ul>
-            </section>
-            <section class="interests">
-                <h2><i class="fas fa-star"></i> Zainteresowania</h2>
-                <p>Zoologia, sport, nowe technologie, podróże, literatura fantastyczna.</p>
-            </section>
-        </aside>
-
-        <!-- Prawa kolumna -->
-        <main class="right-panel">
-            <header>
-                <h1>Maja Szumaj</h1>
-                <p>
-                    Jestem studentką Informatyki z doświadczeniem w obsłudze klientów oraz znajomością procesów logistycznych. Specjalizuję się w tworzeniu aplikacji oraz analizie systemów informatycznych.
-                </p>
-            </header>
-            <section class="experience">
-                <h2><i class="fas fa-briefcase"></i> Doświadczenie zawodowe</h2>
-                <ul>
-                    <li>
-                        <b>Pracownik biurowy</b> – CNS Tadeusz Szuba, Sułkowice (lipiec 2021 – obecnie)
-                        <ul>
-                            <li>Obsługa klienta</li>
-                            <li>Wprowadzanie faktur i prowadzenie rejestru dokumentów</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>Asystent ds. administracji</b> – Ayses Polska (styczeń 2023 – luty 2024)
-                        <ul>
-                            <li>Obsługa bieżących zapytań klientów</li>
-                            <li>Przygotowanie raportów oraz archiwizacja dokumentów</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <section class="education">
-                <h2><i class="fas fa-graduation-cap"></i> Wykształcenie</h2>
-                <ul>
-                    <li>Uniwersytet WSB Merito Warszawa – Informatyka, Inżynier (październik 2022 – obecnie)</li>
-                    <li>Zespół Szkół nr 1 im. Kazimierza Wielkiego – Technik Informatyk (wrzesień 2018 – kwiecień 2022)</li>
-                </ul>
-            </section>
-            <section>
-                <h2><i class="fas fa-tools"></i> Umiejętności</h2>
-                <p><b>Miękkie:</b> Komunikatywność, umiejętność pracy w zespole, organizacja pracy</p>
-                <p><b>Twarde:</b> Obsługa MS Office, konfiguracja sprzętu IT, podstawy SEO</p>
-            </section>
-            <section>
-                <h2><i class="fas fa-certificate"></i> Certyfikaty</h2>
-                <ul>
-                    <li>CCNA: Introduction to Networks</li>
-                    <li>IT Essentials: PC Hardware and Software</li>
-                    <li>Organizer: Cisco Networking Academy</li>
-                </ul>
-            </section>
-        </main>
+    <div class="theme-toggle">
+        <button id="toggle-theme">🌞 Tryb jasny</button>
     </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="profile-placeholder.png" alt="Zdjęcie profilowe" class="profile">
+            <h1>Maja Szumaj</h1>
+            <p>Tworzę nowoczesne aplikacje i systemy informatyczne. Specjalizuję się w analizie danych i projektowaniu UX/UI.</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="cta">Zobacz moje portfolio</a>
+                <a href="#contact" class="cta">Skontaktuj się</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <h2>O mnie</h2>
+            <p>
+                Jestem studentką Informatyki z doświadczeniem w obsłudze klientów oraz znajomością procesów logistycznych.
+                Uwielbiam tworzyć nowoczesne rozwiązania technologiczne i projektować interfejsy użytkownika.
+            </p>
+        </section>
+
+        <section id="timeline" class="timeline">
+            <h2>Kariera</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <h3>2021 - obecnie</h3>
+                    <p><b>Pracownik biurowy</b> – CNS Tadeusz Szuba</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2023 - 2024</h3>
+                    <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2018 - 2022</h3>
+                    <p><b>Technik Informatyk</b> – Zespół Szkół nr 1</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Umiejętności</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress"><div class="bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress"><div class="bar" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress"><div class="bar" style="width: 70%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Projekt 1">
+                    <p>Aplikacja mobilna</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Projekt 2">
+                    <p>System CRM</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Projekt 3">
+                    <p>Strona e-commerce</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <form>
+                <input type="text" placeholder="Twoje imię" required>
+                <input type="email" placeholder="Twój e-mail" required>
+                <textarea placeholder="Twoja wiadomość" required></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Maja Szumaj. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
 
 
