@@ -2,7 +2,7 @@
 const toggleThemeButton = document.querySelector('#toggle-theme');
 const body = document.querySelector('body');
 const header = document.querySelector('header');
-const sections = document.querySelectorAll('.timeline-item, .skill, .project');
+const sections = document.querySelectorAll('.timeline-item, .skill, .project, .portfolio, .about, .contact, .education');
 const footer = document.querySelector('footer');
 
 toggleThemeButton.addEventListener('click', () => {
@@ -18,4 +18,5 @@ toggleThemeButton.addEventListener('click', () => {
         toggleThemeButton.textContent = '🌙 Tryb ciemny';
     }
 });
+
 
