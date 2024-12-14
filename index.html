@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Sticky Header -->
-    <header class="sticky-header">
+    <header>
         <nav>
             <a href="#about">O mnie</a>
             <a href="#timeline">Kariera</a>
@@ -34,61 +34,33 @@
 
     <main>
         <!-- Sekcja O mnie -->
-        <section id="about" class="about">
+        <section id="about" class="about-container">
             <h2>O mnie</h2>
-            <div class="about-container">
-                <!-- Zdjęcie profilowe -->
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe kobiety" class="profile">
-                <p>
-                    Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.
-                </p>
-            </div>
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe kobiety" class="profile">
+            <p>
+                Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.
+            </p>
         </section>
 
         <!-- Sekcja Kariera -->
-        <section id="timeline" class="timeline">
+        <section id="timeline" class="timeline-container">
             <h2>Kariera</h2>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <span class="icon"><i class="fas fa-briefcase"></i></span>
-                    <h3>2021 - obecnie</h3>
-                    <p><b>Pracownik biurowy</b> – CNS Tadeusz Szuba</p>
-                    <p>Odpowiedzialność za dokumentację i kontakt z klientami.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="icon"><i class="fas fa-user-tie"></i></span>
-                    <h3>2023 - 2024</h3>
-                    <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
-                    <p>Zarządzanie raportami i optymalizacja procesów.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="icon"><i class="fas fa-graduation-cap"></i></span>
-                    <h3>2018 - 2022</h3>
-                    <p><b>Technik Informatyk</b> – Zespół Szkół nr 1</p>
-                </div>
+            <div class="timeline-item">
+                <span class="icon"><i class="fas fa-briefcase"></i></span>
+                <h3>2021 - obecnie</h3>
+                <p><b>Pracownik biurowy</b> – CNS Tadeusz Szuba</p>
+                <p>Odpowiedzialność za dokumentację i kontakt z klientami.</p>
             </div>
-        </section>
-
-        <!-- Sekcja Umiejętności -->
-        <section id="skills" class="skills">
-            <h2>Umiejętności</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-html5"></i></span>
-                    <p>HTML</p>
-                </div>
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-css3-alt"></i></span>
-                    <p>CSS</p>
-                </div>
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-js"></i></span>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-react"></i></span>
-                    <p>React.js</p>
-                </div>
+            <div class="timeline-item">
+                <span class="icon"><i class="fas fa-user-tie"></i></span>
+                <h3>2023 - 2024</h3>
+                <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
+                <p>Zarządzanie raportami i optymalizacja procesów.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                <h3>2018 - 2022</h3>
+                <p><b>Technik Informatyk</b> – Zespół Szkół nr 1</p>
             </div>
         </section>
 
@@ -98,24 +70,18 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <img src="https://via.placeholder.com/300x200" alt="Projekt 1">
-                    <div class="portfolio-hover">
-                        <h3>Aplikacja mobilna</h3>
-                        <p>Projekt aplikacji mobilnej w React Native.</p>
-                    </div>
+                    <h3>Aplikacja mobilna</h3>
+                    <p>Projekt aplikacji mobilnej w React Native.</p>
                 </div>
                 <div class="portfolio-item">
                     <img src="https://via.placeholder.com/300x200" alt="Projekt 2">
-                    <div class="portfolio-hover">
-                        <h3>System CRM</h3>
-                        <p>Stworzony system CRM do zarządzania klientami.</p>
-                    </div>
+                    <h3>System CRM</h3>
+                    <p>Stworzony system CRM do zarządzania klientami.</p>
                 </div>
                 <div class="portfolio-item">
                     <img src="https://via.placeholder.com/300x200" alt="Projekt 3">
-                    <div class="portfolio-hover">
-                        <h3>Strona e-commerce</h3>
-                        <p>Wdrożenie strony sprzedażowej z funkcjami płatności.</p>
-                    </div>
+                    <h3>Strona e-commerce</h3>
+                    <p>Wdrożenie strony sprzedażowej z funkcjami płatności.</p>
                 </div>
             </div>
         </section>
