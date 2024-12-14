@@ -5,26 +5,60 @@
     box-sizing: border-box;
 }
 
-/* Ogólny styl strony */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #eef9ff, #ffffff);
+    background: linear-gradient(180deg, #eef3f9, #ffffff);
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden;
     transition: all 0.3s ease-in-out;
 }
 
-header {
-    background-color: #3498db;
-    color: white;
-    padding: 15px 30px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-/* Pozostałe style są identyczne jak w poprzednim CSS */
+h1 {
+    font-size: 3rem;
+    color: #3498db;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+p {
+    margin: 10px 0;
+    text-align: justify;
+    font-size: 1rem;
+    color: #555;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+}
+
+.about-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
