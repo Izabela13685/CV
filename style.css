@@ -7,43 +7,22 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(180deg, #eef3f9, #ffffff);
+    background: #eef3f9; /* Niebiesko-białe tło */
     color: #333;
     line-height: 1.6;
-    overflow-x: hidden;
     transition: all 0.3s ease-in-out;
 }
 
-h1, h2, h3 {
+body.dark-theme {
+    background: #121212; /* Ciemne tło */
+    color: #f1c40f; /* Żółty tekst */
+}
+
+/* Sekcja O mnie */
+.about-container {
     text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 3rem;
-    color: #3498db;
-}
-
-h2 {
-    font-size: 2rem;
-    color: #2c3e50;
-    border-bottom: 3px solid #3498db;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
-}
-
-h3 {
-    font-size: 1.5rem;
-    color: #2c3e50;
-}
-
-p {
-    margin: 10px 0;
-    text-align: justify;
-    font-size: 1rem;
-    color: #555;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 .profile {
@@ -51,16 +30,7 @@ p {
     height: 150px;
     border-radius: 50%;
     border: 5px solid #3498db;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: block;
-    margin: 20px auto;
     object-fit: cover;
-}
-
-.about-container {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 800px;
 }
 
 
