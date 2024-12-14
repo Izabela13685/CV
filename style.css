@@ -7,11 +7,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(180deg, #f7f9fc, #eef2f3);
+    background: linear-gradient(180deg, #eef3f9, #ffffff);
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Nagłówki i teksty */
@@ -283,4 +283,5 @@ section h2 {
 .contact form button:hover {
     background: #2ecc71;
 }
+
 
