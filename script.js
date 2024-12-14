@@ -2,15 +2,13 @@
 const toggleThemeButton = document.querySelector('#toggle-theme');
 const body = document.querySelector('body');
 const header = document.querySelector('header');
-const footer = document.querySelector('footer');
-const sections = document.querySelectorAll('.timeline-item, .skill, .project, .portfolio, .about, .contact, .education');
+const sections = document.querySelectorAll('.timeline-item, .skill, .project, .education');
 
 toggleThemeButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     header.classList.toggle('dark-mode');
-    footer.classList.toggle('dark-mode');
     sections.forEach(section => section.classList.toggle('dark-mode'));
-    
+
     // Update button text
     if (body.classList.contains('dark-mode')) {
         toggleThemeButton.textContent = '🌞 Tryb jasny';
@@ -18,5 +16,6 @@ toggleThemeButton.addEventListener('click', () => {
         toggleThemeButton.textContent = '🌙 Tryb ciemny';
     }
 });
+
 
 
