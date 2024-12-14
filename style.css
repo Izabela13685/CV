@@ -14,6 +14,12 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+/* Tryb ciemny */
+body.dark-theme {
+    background: linear-gradient(180deg, #121212, #1e1e1e);
+    color: #e0e0e0;
+}
+
 /* Nagłówki i teksty */
 h1, h2, h3 {
     text-align: center;
@@ -26,6 +32,10 @@ h1 {
     color: #3498db;
 }
 
+body.dark-theme h1 {
+    color: #f1c40f;
+}
+
 h2 {
     font-size: 2rem;
     color: #2c3e50;
@@ -35,9 +45,18 @@ h2 {
     margin-bottom: 30px;
 }
 
+body.dark-theme h2 {
+    color: #f1c40f;
+    border-bottom: 3px solid #f1c40f;
+}
+
 h3 {
     font-size: 1.5rem;
     color: #2c3e50;
+}
+
+body.dark-theme h3 {
+    color: #f1c40f;
 }
 
 p {
@@ -45,6 +64,10 @@ p {
     text-align: justify;
     font-size: 1rem;
     color: #555;
+}
+
+body.dark-theme p {
+    color: #c7c7c7;
 }
 
 /* Sticky Header */
@@ -63,6 +86,11 @@ p {
     align-items: center;
 }
 
+body.dark-theme .sticky-header {
+    background: rgba(20, 20, 20, 0.9);
+    color: #e0e0e0;
+}
+
 .sticky-header nav a {
     color: #fff;
     text-decoration: none;
@@ -70,6 +98,10 @@ p {
     font-size: 1rem;
     font-weight: bold;
     transition: color 0.3s;
+}
+
+body.dark-theme .sticky-header nav a {
+    color: #f1c40f;
 }
 
 .sticky-header nav a:hover {
@@ -83,6 +115,10 @@ p {
     cursor: pointer;
     color: #fff;
     transition: transform 0.3s;
+}
+
+body.dark-theme .theme-toggle {
+    color: #f1c40f;
 }
 
 .theme-toggle:hover {
@@ -99,6 +135,10 @@ p {
     background: linear-gradient(135deg, #3498db, #2ecc71);
     color: white;
     padding: 20px;
+}
+
+body.dark-theme .hero {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
 }
 
 .hero h1 {
@@ -125,6 +165,11 @@ p {
     transition: all 0.3s;
 }
 
+body.dark-theme .cta-buttons a {
+    background: #2c3e50;
+    color: white;
+}
+
 .cta-buttons a:hover {
     background: #2ecc71;
     color: white;
@@ -141,8 +186,16 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+body.dark-theme section {
+    background: #1e1e1e;
+}
+
 section:nth-child(odd) {
     background: #f7f9fc;
+}
+
+body.dark-theme section:nth-child(odd) {
+    background: #2a2a2a;
 }
 
 section h2 {
@@ -160,11 +213,8 @@ section h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.about p {
-    font-size: 1.1rem;
-    color: #555;
-    margin: 20px 0;
-    text-align: justify;
+body.dark-theme .about img {
+    border: 5px solid #f1c40f;
 }
 
 /* Timeline */
@@ -183,9 +233,18 @@ section h2 {
     transition: transform 0.3s;
 }
 
+body.dark-theme .timeline-item {
+    background: #2a2a2a;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
 .timeline-item:hover {
     transform: scale(1.02);
     background: #eaf2fb;
+}
+
+body.dark-theme .timeline-item:hover {
+    background: #444;
 }
 
 .timeline-item .icon {
@@ -194,25 +253,8 @@ section h2 {
     margin-bottom: 10px;
 }
 
-/* Umiejętności */
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    text-align: center;
-}
-
-.skills-container .skill {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.skills-container .skill:hover {
-    transform: scale(1.05);
-    background: #eaf2fb;
+body.dark-theme .timeline-item .icon {
+    color: #f1c40f;
 }
 
 /* Portfolio */
@@ -230,6 +272,10 @@ section h2 {
     transition: transform 0.3s;
 }
 
+body.dark-theme .portfolio-item {
+    background: #2a2a2a;
+}
+
 .portfolio-item img {
     width: 100%;
     height: 200px;
@@ -238,7 +284,6 @@ section h2 {
 
 .portfolio-item:hover {
     transform: scale(1.05);
-    background: #eaf2fb;
 }
 
 /* Formularz kontaktowy */
@@ -262,6 +307,13 @@ section h2 {
     transition: border-color 0.3s;
 }
 
+body.dark-theme .contact form input,
+body.dark-theme .contact form textarea {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #fff;
+}
+
 .contact form input:focus, 
 .contact form textarea:focus {
     border-color: #3498db;
@@ -280,8 +332,13 @@ section h2 {
     transition: background 0.3s;
 }
 
+body.dark-theme .contact form button {
+    background: #444;
+}
+
 .contact form button:hover {
     background: #2ecc71;
 }
+
 
 
