@@ -7,11 +7,17 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(180deg, #eef3f9, #ffffff);
-    color: #333;
+    background: linear-gradient(180deg, #eef3f9, #ffffff); /* Niebiesko-białe tło */
+    color: #333; /* Ciemny tekst */
     line-height: 1.6;
     overflow-x: hidden;
     transition: all 0.3s ease-in-out;
+}
+
+/* Tryb ciemny */
+body.dark-theme {
+    background: linear-gradient(180deg, #121212, #1e1e1e); /* Czarny */
+    color: #f1c40f; /* Żółty tekst */
 }
 
 /* Nagłówki */
@@ -26,6 +32,10 @@ h1 {
     color: #3498db;
 }
 
+body.dark-theme h1 {
+    color: #f1c40f; /* Żółty nagłówek w trybie ciemnym */
+}
+
 h2 {
     font-size: 2rem;
     color: #2c3e50;
@@ -33,6 +43,11 @@ h2 {
     display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 30px;
+}
+
+body.dark-theme h2 {
+    color: #f1c40f;
+    border-bottom: 3px solid #f1c40f;
 }
 
 /* Sekcja O mnie */
@@ -60,6 +75,10 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+body.dark-theme .profile {
+    border-color: #f1c40f; /* Żółta obwódka w trybie ciemnym */
+}
+
 .profile:hover {
     transform: scale(1.1); /* Powiększenie na hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Większy cień na hover */
@@ -69,5 +88,41 @@ h2 {
     font-size: 1.2rem;
     color: #555;
     line-height: 1.8;
+}
+
+body.dark-theme .about p {
+    color: #f1c40f; /* Żółty tekst w trybie ciemnym */
+}
+
+/* Sticky Header */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #3498db; /* Niebieski w trybie jasnym */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+body.dark-theme .sticky-header {
+    background: #1e1e1e; /* Ciemny w trybie ciemnym */
+    color: #f1c40f; /* Żółty tekst w trybie ciemnym */
+}
+
+.sticky-header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+body.dark-theme .sticky-header nav a {
+    color: #f1c40f;
 }
 
