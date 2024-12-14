@@ -18,3 +18,4 @@ toggleThemeButton.addEventListener('click', () => {
         toggleThemeButton.textContent = '🌙 Tryb ciemny';
     }
 });
+
