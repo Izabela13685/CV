@@ -10,89 +10,56 @@ body {
     background: linear-gradient(120deg, #eef2f3, #ffffff);
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden;
+    transition: all 0.3s;
+}
+
+/* Tryb ciemny */
+body.dark-theme {
+    background: linear-gradient(120deg, #1e1e1e, #121212);
+    color: #e0e0e0;
+}
+
+/* Sticky Header */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     transition: background 0.3s, color 0.3s;
+}
+
+body.dark-theme .sticky-header {
+    background: rgba(20, 20, 20, 0.8);
+    color: #e0e0e0;
+}
+
+.sticky-header a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+body.dark-theme .sticky-header a {
+    color: #e0e0e0;
+}
+
+.sticky-header a:hover {
+    color: #3498db;
 }
 
 .theme-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    background: linear-gradient(135deg, #3498db, #2ecc71);
-    color: white;
-    position: relative;
-}
-
-.hero-content {
-    z-index: 2;
-}
-
-.hero .profile {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 5px solid white;
-    animation: float 2s infinite;
-}
-
-.cta {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    color: #3498db;
-    background: white;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s, color 0.3s;
-}
-
-.cta:hover {
-    background: #2ecc71;
-    color: white;
-}
-
-section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-}
-
-.skills-container .progress {
-    width: 80%;
-    height: 10px;
-    background: #ddd;
-    margin: 10px auto;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.progress .bar {
-    height: 100%;
-    background: linear-gradient(90deg, #3498db, #2ecc71);
-}
-
-.contact form {
-    max-width: 600px;
-    margin: auto;
-}
-
-.contact form input, .contact form textarea, .contact form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 1rem;
-}
+    border: none;
 
 
 
