@@ -11,9 +11,13 @@ toggleTheme.addEventListener('click', () => {
     } else {
         toggleTheme.textContent = '🌙 Tryb ciemny';
     }
+
+    // Zapisanie stanu w localStorage
+    const isDarkMode = document.body.classList.contains('dark-theme');
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 });
 
-// Zachowanie preferencji trybu (localStorage)
+// Ustawienie początkowego stanu przy ładowaniu strony
 window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
@@ -21,10 +25,4 @@ window.addEventListener('DOMContentLoaded', () => {
         toggleTheme.textContent = '🌞 Tryb jasny';
     }
 });
-
-toggleTheme.addEventListener('click', () => {
-    const isDarkMode = document.body.classList.contains('dark-theme');
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-});
-
 
