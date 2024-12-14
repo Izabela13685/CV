@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Sticky Header -->
+    <!-- Header -->
     <header>
         <nav>
             <a href="#about">O mnie</a>
@@ -32,19 +32,19 @@
         </div>
     </section>
 
-    <main>
-        <!-- Sekcja O mnie -->
-        <section id="about" class="about-container">
-            <h2>O mnie</h2>
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe kobiety" class="profile">
-            <p>
-                Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.
-            </p>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>O mnie</h2>
+        <div class="about-container">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe" class="profile">
+            <p>Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.</p>
+        </div>
+    </section>
 
-        <!-- Sekcja Kariera -->
-        <section id="timeline" class="timeline-container">
-            <h2>Kariera</h2>
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <h2>Kariera</h2>
+        <div class="timeline-container">
             <div class="timeline-item">
                 <span class="icon"><i class="fas fa-briefcase"></i></span>
                 <h3>2021 - obecnie</h3>
@@ -57,47 +57,47 @@
                 <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
                 <p>Zarządzanie raportami i optymalizacja procesów.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Sekcja Umiejętności -->
-        <section id="skills" class="skills">
-            <h2>Umiejętności</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-html5"></i></span>
-                    <p>HTML</p>
-                </div>
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-css3-alt"></i></span>
-                    <p>CSS</p>
-                </div>
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-js"></i></span>
-                    <p>JavaScript</p>
-                </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Umiejętności</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span class="icon"><i class="fab fa-html5"></i></span>
+                <p>HTML</p>
             </div>
-        </section>
+            <div class="skill">
+                <span class="icon"><i class="fab fa-css3-alt"></i></span>
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <span class="icon"><i class="fab fa-js"></i></span>
+                <p>JavaScript</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Sekcja Kontakt -->
-        <section id="contact" class="contact">
-            <h2>Kontakt</h2>
-            <form>
-                <div class="field">
-                    <input type="text" id="name" required>
-                    <label for="name">Twoje imię</label>
-                </div>
-                <div class="field">
-                    <input type="email" id="email" required>
-                    <label for="email">Twój e-mail</label>
-                </div>
-                <div class="field">
-                    <textarea id="message" required></textarea>
-                    <label for="message">Twoja wiadomość</label>
-                </div>
-                <button type="submit">Wyślij</button>
-            </form>
-        </section>
-    </main>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <div class="field">
+                <input type="text" id="name" required>
+                <label for="name">Twoje imię</label>
+            </div>
+            <div class="field">
+                <input type="email" id="email" required>
+                <label for="email">Twój e-mail</label>
+            </div>
+            <div class="field">
+                <textarea id="message" required></textarea>
+                <label for="message">Twoja wiadomość</label>
+            </div>
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
 
     <footer>
         <p>© 2024 Maja Szumaj. Wszystkie prawa zastrzeżone.</p>
