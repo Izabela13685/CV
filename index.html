@@ -8,103 +8,137 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="theme-toggle">
-        <button id="toggle-theme">🌞 Tryb jasny</button>
-    </div>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <nav>
+            <a href="#about">O mnie</a>
+            <a href="#timeline">Kariera</a>
+            <a href="#skills">Umiejętności</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Kontakt</a>
+            <button id="toggle-theme" class="theme-toggle">🌙 Tryb ciemny</button>
+        </nav>
+    </header>
 
-    <header class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="parallax-layer" id="layer1"></div>
+        <div class="parallax-layer" id="layer2"></div>
         <div class="hero-content">
-            <img src="profile-placeholder.png" alt="Zdjęcie profilowe" class="profile">
-            <h1>Maja Szumaj</h1>
-            <p>Tworzę nowoczesne aplikacje i systemy informatyczne. Specjalizuję się w analizie danych i projektowaniu UX/UI.</p>
+            <h1>Cześć, jestem <span>Maja Szumaj</span></h1>
+            <p>Tworzę nowoczesne aplikacje, projektuję interfejsy i uwielbiam optymalizować procesy technologiczne.</p>
             <div class="cta-buttons">
-                <a href="#portfolio" class="cta">Zobacz moje portfolio</a>
+                <a href="#portfolio" class="cta">Zobacz portfolio</a>
                 <a href="#contact" class="cta">Skontaktuj się</a>
             </div>
         </div>
-    </header>
+    </section>
 
     <main>
+        <!-- Sekcja "O mnie" -->
         <section id="about" class="about">
             <h2>O mnie</h2>
-            <p>
-                Jestem studentką Informatyki z doświadczeniem w obsłudze klientów oraz znajomością procesów logistycznych.
-                Uwielbiam tworzyć nowoczesne rozwiązania technologiczne i projektować interfejsy użytkownika.
-            </p>
+            <div class="about-container">
+                <img src="profile-placeholder.png" alt="Zdjęcie profilowe" class="profile">
+                <p>
+                    Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.
+                </p>
+            </div>
         </section>
 
+        <!-- Timeline -->
         <section id="timeline" class="timeline">
             <h2>Kariera</h2>
             <div class="timeline-container">
                 <div class="timeline-item">
+                    <span class="icon"><i class="fas fa-briefcase"></i></span>
                     <h3>2021 - obecnie</h3>
                     <p><b>Pracownik biurowy</b> – CNS Tadeusz Szuba</p>
+                    <p>Odpowiedzialność za dokumentację i kontakt z klientami.</p>
                 </div>
                 <div class="timeline-item">
+                    <span class="icon"><i class="fas fa-user-tie"></i></span>
                     <h3>2023 - 2024</h3>
                     <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2018 - 2022</h3>
-                    <p><b>Technik Informatyk</b> – Zespół Szkół nr 1</p>
+                    <p>Zarządzanie raportami i optymalizacja procesów.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Umiejętności -->
         <section id="skills" class="skills">
             <h2>Umiejętności</h2>
             <div class="skills-container">
                 <div class="skill">
+                    <span class="icon"><i class="fab fa-html5"></i></span>
                     <p>HTML</p>
-                    <div class="progress"><div class="bar" style="width: 90%;"></div></div>
+                    <div class="circle">
+                        <div class="progress-circle" data-value="90"></div>
+                    </div>
                 </div>
                 <div class="skill">
+                    <span class="icon"><i class="fab fa-css3-alt"></i></span>
                     <p>CSS</p>
-                    <div class="progress"><div class="bar" style="width: 80%;"></div></div>
+                    <div class="circle">
+                        <div class="progress-circle" data-value="80"></div>
+                    </div>
                 </div>
                 <div class="skill">
+                    <span class="icon"><i class="fab fa-js"></i></span>
                     <p>JavaScript</p>
-                    <div class="progress"><div class="bar" style="width: 70%;"></div></div>
+                    <div class="circle">
+                        <div class="progress-circle" data-value="70"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Portfolio -->
         <section id="portfolio" class="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <img src="project1.jpg" alt="Projekt 1">
-                    <p>Aplikacja mobilna</p>
+                    <div class="portfolio-hover">
+                        <h3>Aplikacja mobilna</h3>
+                        <p>Opis projektu</p>
+                    </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="project2.jpg" alt="Projekt 2">
-                    <p>System CRM</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="project3.jpg" alt="Projekt 3">
-                    <p>Strona e-commerce</p>
+                    <div class="portfolio-hover">
+                        <h3>System CRM</h3>
+                        <p>Opis projektu</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Kontakt -->
         <section id="contact" class="contact">
             <h2>Kontakt</h2>
             <form>
-                <input type="text" placeholder="Twoje imię" required>
-                <input type="email" placeholder="Twój e-mail" required>
-                <textarea placeholder="Twoja wiadomość" required></textarea>
+                <div class="field">
+                    <input type="text" id="name" required>
+                    <label for="name">Twoje imię</label>
+                </div>
+                <div class="field">
+                    <input type="email" id="email" required>
+                    <label for="email">Twój e-mail</label>
+                </div>
+                <div class="field">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Twoja wiadomość</label>
+                </div>
                 <button type="submit">Wyślij</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Maja Szumaj. Wszelkie prawa zastrzeżone.</p>
+        <p>© 2024 Maja Szumaj. Wszystkie prawa zastrzeżone.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
