@@ -199,6 +199,16 @@ p {
     margin-bottom: 10px;
 }
 
+/* Education Section */
+.education {
+    background-color: #fff;
+}
+
+.education p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
 /* Contact Section */
 .contact {
     background-color: #fff;
@@ -253,16 +263,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #2980b9;
-}
-
-/* Education Section */
-.education {
-    background-color: #fff;
-}
-
-.education p {
-    font-size: 1.2rem;
-    color: #333;
 }
 
 /* Footer */
