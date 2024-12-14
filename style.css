@@ -14,10 +14,37 @@ body {
     transition: all 0.3s;
 }
 
-/* Tryb ciemny */
-body.dark-theme {
-    background: linear-gradient(120deg, #1e1e1e, #121212);
-    color: #e0e0e0;
+/* Nagłówki i teksty */
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+h1 span {
+    color: #3498db;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+/* Kontener sekcji */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Sticky Header */
@@ -26,7 +53,7 @@ body.dark-theme {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -34,15 +61,9 @@ body.dark-theme {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background 0.3s, color 0.3s;
 }
 
-body.dark-theme .sticky-header {
-    background: rgba(20, 20, 20, 0.8);
-    color: #e0e0e0;
-}
-
-.sticky-header a {
+.sticky-header nav a {
     color: #333;
     text-decoration: none;
     margin: 0 15px;
@@ -50,120 +71,65 @@ body.dark-theme .sticky-header {
     transition: color 0.3s;
 }
 
-body.dark-theme .sticky-header a {
-    color: #e0e0e0;
-}
-
-.sticky-header a:hover {
+.sticky-header nav a:hover {
     color: #3498db;
-}
-
-.theme-toggle {
-    border: none;
-    background: transparent;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
-    transition: transform 0.3s;
-}
-
-body.dark-theme .theme-toggle {
-    color: #e0e0e0;
-}
-
-.theme-toggle:hover {
-    transform: rotate(20deg);
 }
 
 /* Hero Section */
 .hero {
-    position: relative;
+    text-align: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     background: linear-gradient(135deg, #3498db, #2ecc71);
     color: white;
-    overflow: hidden;
+    position: relative;
 }
 
-body.dark-theme .hero {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.hero-content h1 span {
-    color: #f1c40f;
-}
-
-.hero-content p {
+.hero p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.cta-buttons .cta {
-    display: inline-block;
+.cta-buttons a {
     margin: 10px;
     padding: 10px 20px;
     background: white;
     color: #3498db;
     border-radius: 25px;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
     transition: all 0.3s;
 }
 
-.cta:hover {
+.cta-buttons a:hover {
     background: #2ecc71;
     color: white;
     transform: scale(1.1);
 }
 
-/* About Section */
-.about {
-    padding: 60px 20px;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: auto;
-}
-
-.about-container img {
+/* Sekcja O mnie */
+.about img {
+    display: block;
     width: 150px;
     height: 150px;
+    margin: 20px auto;
     border-radius: 50%;
-    margin-bottom: 20px;
-    border: 5px solid white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid #3498db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Timeline */
-.timeline {
-    padding: 60px 20px;
-    background: #ffffff;
-}
-
-body.dark-theme .timeline {
-    background: #1e1e1e;
-}
-
 .timeline-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 800px;
     margin: auto;
 }
 
@@ -175,75 +141,31 @@ body.dark-theme .timeline {
     transition: transform 0.3s;
 }
 
-body.dark-theme .timeline-item {
-    background: #2a2a2a;
-}
-
 .timeline-item:hover {
     transform: scale(1.02);
 }
 
-.timeline-item .icon {
-    font-size: 1.5rem;
-    color: #3498db;
-    margin-bottom: 10px;
-}
-
-/* Skills Section */
-.skills {
-    padding: 60px 20px;
-    text-align: center;
-}
-
+/* Umiejętności */
 .skills-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-}
-
-.skill {
     text-align: center;
 }
 
-.skill .icon {
-    font-size: 2rem;
-    color: #3498db;
-    margin-bottom: 10px;
+.skills-container .skill {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-.circle {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-}
-
-.progress-circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: conic-gradient(#3498db 0%, #ddd 0%);
-    animation: fillCircle 2s ease-out forwards;
-}
-
-body.dark-theme .progress-circle {
-    background: conic-gradient(#2ecc71 0%, #444 0%);
+.skills-container .skill:hover {
+    transform: scale(1.05);
 }
 
 /* Portfolio */
-.portfolio {
-    padding: 60px 20px;
-    background: #f9f9f9;
-}
-
-body.dark-theme .portfolio {
-    background: #1e1e1e;
-}
-
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -254,12 +176,8 @@ body.dark-theme .portfolio {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-}
-
-body.dark-theme .portfolio-item {
-    background: #2a2a2a;
 }
 
 .portfolio-item img {
@@ -271,26 +189,3 @@ body.dark-theme .portfolio-item {
 .portfolio-item:hover {
     transform: scale(1.05);
 }
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fillCircle {
-    0% {
-        background: conic-gradient(#ddd 0%, #ddd 100%);
-    }
-    100% {
-        background: conic-gradient(#3498db 90%, #ddd 0%);
-    }
-}
-
-
