@@ -37,7 +37,8 @@
         <section id="about" class="about">
             <h2>O mnie</h2>
             <div class="about-container">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe kobiety" class="profile">
+                <!-- Zdjęcie z publicznego placeholdera -->
+                <img src="https://via.placeholder.com/150" alt="Zdjęcie profilowe kobiety" class="profile">
                 <p>
                     Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.
                 </p>
@@ -60,6 +61,34 @@
                     <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
                     <p>Zarządzanie raportami i optymalizacja procesów.</p>
                 </div>
+                <div class="timeline-item">
+                    <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                    <h3>2018 - 2022</h3>
+                    <p><b>Technik Informatyk</b> – Zespół Szkół nr 1</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Umiejętności -->
+        <section id="skills" class="skills">
+            <h2>Umiejętności</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <span class="icon"><i class="fab fa-html5"></i></span>
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <span class="icon"><i class="fab fa-css3-alt"></i></span>
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <span class="icon"><i class="fab fa-js"></i></span>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <span class="icon"><i class="fab fa-react"></i></span>
+                    <p>React.js</p>
+                </div>
             </div>
         </section>
 
@@ -69,20 +98,46 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <img src="https://via.placeholder.com/300x200" alt="Projekt 1">
-                    <h3>Aplikacja mobilna</h3>
-                    <p>Projekt aplikacji mobilnej w React Native.</p>
+                    <div class="portfolio-hover">
+                        <h3>Aplikacja mobilna</h3>
+                        <p>Projekt aplikacji mobilnej w React Native.</p>
+                    </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="https://via.placeholder.com/300x200" alt="Projekt 2">
-                    <h3>System CRM</h3>
-                    <p>Stworzony system CRM do zarządzania klientami.</p>
+                    <div class="portfolio-hover">
+                        <h3>System CRM</h3>
+                        <p>Stworzony system CRM do zarządzania klientami.</p>
+                    </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="https://via.placeholder.com/300x200" alt="Projekt 3">
-                    <h3>Strona e-commerce</h3>
-                    <p>Wdrożenie sklepu internetowego z płatnościami.</p>
+                    <div class="portfolio-hover">
+                        <h3>Strona e-commerce</h3>
+                        <p>Wdrożenie strony sprzedażowej z funkcjami płatności.</p>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Sekcja Kontakt -->
+        <section id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <form>
+                <div class="field">
+                    <input type="text" id="name" required>
+                    <label for="name">Twoje imię</label>
+                </div>
+                <div class="field">
+                    <input type="email" id="email" required>
+                    <label for="email">Twój e-mail</label>
+                </div>
+                <div class="field">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Twoja wiadomość</label>
+                </div>
+                <button type="submit">Wyślij</button>
+            </form>
         </section>
     </main>
 
