@@ -1,28 +1,30 @@
-// Tryb jasny/ciemny
+// Pobranie przycisku przełączania trybu
 const toggleTheme = document.getElementById('toggle-theme');
 
 // Funkcja przełączania trybu jasny/ciemny
-toggleTheme.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme'); // Dodanie/Usunięcie klasy dark-theme
+function toggleDarkMode() {
+    const isDarkMode = document.body.classList.toggle('dark-theme'); // Dodaj/usuń klasę "dark-theme"
 
-    // Zmiana tekstu przycisku w zależności od trybu
-    if (document.body.classList.contains('dark-theme')) {
-        toggleTheme.textContent = '🌞 Tryb jasny';
-    } else {
-        toggleTheme.textContent = '🌙 Tryb ciemny';
-    }
+    // Aktualizuj tekst i ikonę przycisku
+    toggleTheme.textContent = isDarkMode ? '🌞 Tryb jasny' : '🌙 Tryb ciemny';
 
-    // Zapisanie stanu w localStorage
-    const isDarkMode = document.body.classList.contains('dark-theme');
+    // Zapisz preferencje użytkownika w localStorage
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-});
+}
 
-// Ustawienie początkowego stanu przy ładowaniu strony
+// Przypisz funkcję do kliknięcia
+toggleTheme.addEventListener('click', toggleDarkMode);
+
+// Sprawdź zapisane preferencje w localStorage przy załadowaniu strony
 window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
+
+    // Jeśli zapisany jest tryb ciemny, ustaw odpowiednią klasę
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-theme');
         toggleTheme.textContent = '🌞 Tryb jasny';
+    } else {
+        document.body.classList.remove('dark-theme');
+        toggleTheme.textContent = '🌙 Tryb ciemny';
     }
 });
-
