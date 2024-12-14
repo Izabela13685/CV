@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Maja Szumaj</title>
+    <title>CV - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -20,101 +20,41 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Cześć, jestem <span>Maja Szumaj</span></h1>
-            <p>Tworzę nowoczesne aplikacje, projektuję interfejsy i uwielbiam optymalizować procesy technologiczne.</p>
-            <div class="cta-buttons">
-                <a href="#portfolio" class="cta">Zobacz portfolio</a>
-                <a href="#contact" class="cta">Skontaktuj się</a>
-            </div>
-        </div>
-    </section>
-
     <main>
-        <!-- Sekcja O mnie -->
-        <section id="about" class="about">
-            <h2>O mnie</h2>
-            <div class="about-container">
-                <!-- Zdjęcie profilowe -->
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe kobiety" class="profile">
-                <p>
-                    Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.
-                </p>
-            </div>
-        </section>
-
-        <!-- Sekcja Kariera -->
-        <section id="timeline" class="timeline">
-            <h2>Kariera</h2>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <span class="icon"><i class="fas fa-briefcase"></i></span>
-                    <h3>2021 - obecnie</h3>
-                    <p><b>Pracownik biurowy</b> – CNS Tadeusz Szuba</p>
-                    <p>Odpowiedzialność za dokumentację i kontakt z klientami.</p>
+        <!-- Sekcja Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <!-- Projekt 1 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Projekt 1">
+                    <div class="portfolio-hover">
+                        <h3>Aplikacja mobilna</h3>
+                        <p>Projekt aplikacji mobilnej w React Native.</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <span class="icon"><i class="fas fa-user-tie"></i></span>
-                    <h3>2023 - 2024</h3>
-                    <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
-                    <p>Zarządzanie raportami i optymalizacja procesów.</p>
+                <!-- Projekt 2 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Projekt 2">
+                    <div class="portfolio-hover">
+                        <h3>System CRM</h3>
+                        <p>Stworzony system CRM do zarządzania klientami.</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <span class="icon"><i class="fas fa-graduation-cap"></i></span>
-                    <h3>2018 - 2022</h3>
-                    <p><b>Technik Informatyk</b> – Zespół Szkół nr 1</p>
+                <!-- Projekt 3 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Projekt 3">
+                    <div class="portfolio-hover">
+                        <h3>Strona e-commerce</h3>
+                        <p>Wdrożenie strony sprzedażowej z funkcjami płatności.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Sekcja Umiejętności -->
-        <section id="skills" class="skills">
-            <h2>Umiejętności</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-html5"></i></span>
-                    <p>HTML</p>
-                </div>
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-css3-alt"></i></span>
-                    <p>CSS</p>
-                </div>
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-js"></i></span>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill">
-                    <span class="icon"><i class="fab fa-react"></i></span>
-                    <p>React.js</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sekcja Kontakt -->
-        <section id="contact" class="contact">
-            <h2>Kontakt</h2>
-            <form>
-                <div class="field">
-                    <input type="text" id="name" required>
-                    <label for="name">Twoje imię</label>
-                </div>
-                <div class="field">
-                    <input type="email" id="email" required>
-                    <label for="email">Twój e-mail</label>
-                </div>
-                <div class="field">
-                    <textarea id="message" required></textarea>
-                    <label for="message">Twoja wiadomość</label>
-                </div>
-                <button type="submit">Wyślij</button>
-            </form>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Maja Szumaj. Wszystkie prawa zastrzeżone.</p>
+        <p>© 2024 Twoje Imię. Wszystkie prawa zastrzeżone.</p>
     </footer>
 
     <script src="script.js"></script>
