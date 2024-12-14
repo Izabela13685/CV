@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
         <nav>
             <a href="#about">O mnie</a>
             <a href="#timeline">Kariera</a>
@@ -32,72 +32,86 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>O mnie</h2>
-        <div class="about-container">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe" class="profile">
-            <p>Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.</p>
-        </div>
-    </section>
+    <main>
+        <!-- Sekcja O mnie -->
+        <section id="about" class="about">
+            <h2>O mnie</h2>
+            <div class="about-container">
+                <!-- Zdjęcie profilowe -->
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zdjęcie profilowe kobiety" class="profile">
+                <p>
+                    Jestem pasjonatką nowych technologii i projektowania UX/UI. Pracuję nad nowoczesnymi aplikacjami i optymalizacją procesów biznesowych. Po pracy lubię zgłębiać wiedzę o sztucznej inteligencji.
+                </p>
+            </div>
+        </section>
 
-    <!-- Timeline Section -->
-    <section id="timeline" class="timeline">
-        <h2>Kariera</h2>
-        <div class="timeline-container">
-            <div class="timeline-item">
-                <span class="icon"><i class="fas fa-briefcase"></i></span>
-                <h3>2021 - obecnie</h3>
-                <p><b>Pracownik biurowy</b> – CNS Tadeusz Szuba</p>
-                <p>Odpowiedzialność za dokumentację i kontakt z klientami.</p>
+        <!-- Sekcja Kariera -->
+        <section id="timeline" class="timeline">
+            <h2>Kariera</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <span class="icon"><i class="fas fa-briefcase"></i></span>
+                    <h3>2021 - obecnie</h3>
+                    <p><b>Pracownik biurowy</b> – CNS Tadeusz Szuba</p>
+                    <p>Odpowiedzialność za dokumentację i kontakt z klientami.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="icon"><i class="fas fa-user-tie"></i></span>
+                    <h3>2023 - 2024</h3>
+                    <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
+                    <p>Zarządzanie raportami i optymalizacja procesów.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                    <h3>2018 - 2022</h3>
+                    <p><b>Technik Informatyk</b> – Zespół Szkół nr 1</p>
+                </div>
             </div>
-            <div class="timeline-item">
-                <span class="icon"><i class="fas fa-user-tie"></i></span>
-                <h3>2023 - 2024</h3>
-                <p><b>Asystent ds. administracji</b> – Ayses Polska</p>
-                <p>Zarządzanie raportami i optymalizacja procesów.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Umiejętności</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <span class="icon"><i class="fab fa-html5"></i></span>
-                <p>HTML</p>
+        <!-- Sekcja Umiejętności -->
+        <section id="skills" class="skills">
+            <h2>Umiejętności</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <span class="icon"><i class="fab fa-html5"></i></span>
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <span class="icon"><i class="fab fa-css3-alt"></i></span>
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <span class="icon"><i class="fab fa-js"></i></span>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <span class="icon"><i class="fab fa-react"></i></span>
+                    <p>React.js</p>
+                </div>
             </div>
-            <div class="skill">
-                <span class="icon"><i class="fab fa-css3-alt"></i></span>
-                <p>CSS</p>
-            </div>
-            <div class="skill">
-                <span class="icon"><i class="fab fa-js"></i></span>
-                <p>JavaScript</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Kontakt</h2>
-        <form>
-            <div class="field">
-                <input type="text" id="name" required>
-                <label for="name">Twoje imię</label>
-            </div>
-            <div class="field">
-                <input type="email" id="email" required>
-                <label for="email">Twój e-mail</label>
-            </div>
-            <div class="field">
-                <textarea id="message" required></textarea>
-                <label for="message">Twoja wiadomość</label>
-            </div>
-            <button type="submit">Wyślij</button>
-        </form>
-    </section>
+        <!-- Sekcja Kontakt -->
+        <section id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <form>
+                <div class="field">
+                    <input type="text" id="name" required>
+                    <label for="name">Twoje imię</label>
+                </div>
+                <div class="field">
+                    <input type="email" id="email" required>
+                    <label for="email">Twój e-mail</label>
+                </div>
+                <div class="field">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Twoja wiadomość</label>
+                </div>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 Maja Szumaj. Wszystkie prawa zastrzeżone.</p>
