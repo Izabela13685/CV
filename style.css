@@ -243,6 +243,18 @@ p {
     margin-bottom: 10px;
 }
 
+/* Education Section */
+.education {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.education p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
 /* Contact Section */
 .contact {
     background-color: #fff;
